@@ -20,6 +20,17 @@ This is a coding exercies focused on clean architecture, state management and co
 - Error handling for API calls
 - Basic unit test
 
+## Design decisions
+- Single custom hook (`useDogs`) manages the main state of the app
+- Favorites are stored in local state
+- API responses are transformed into a `Dog`type using utility functions
+- Components are kept presentational and receive data via props
+
+## Future improvements
+- Persist favorites in localStorage
+- Imrpove layout
+- Add better error UI
+
 ## How to run
 - Install dependencies:
 ```
