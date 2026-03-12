@@ -15,6 +15,7 @@ export function DogList({ dogs, onSelect }: DogListProps) {
                         src={dog.imageUrl}
                         className={styles.thumb}
                         onClick={() => onSelect(dog)}
+                        alt={dog.breed}
                     />
                     <span className={styles.breed}>{dog.breed}</span>
                 </div>
